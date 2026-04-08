@@ -1,0 +1,21 @@
+{
+  "name": "claude-everywhere",
+  "version": "0.1.0",
+  "description": "Connect Claude to anything — browser extension + MCP servers for Gmail, Discord, Replit, and more.",
+  "private": true,
+  "workspaces": [
+    "mcp-servers/*",
+    "extension"
+  ],
+  "scripts": {
+    "build:extension": "cd extension && npm run build",
+    "build:mcp": "cd mcp-servers/gmail && npm run build",
+    "dev:extension": "cd extension && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palashbhasin/claude-everywhere.git"
+  },
+  "license": "MIT",
+  "author": "Palash Bhasin"
+}

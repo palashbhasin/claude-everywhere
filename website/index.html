@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Claude Everywhere - Connect Claude to Everything</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "primary": "#d4a574",
+              "secondary": "#7c3aed",
+              "navy-deep": "#0f0f1a",
+              "navy-base": "#1a1a2e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #1a1a2e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-navy-deep">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#1a1a2e]/80 backdrop-blur-md dark:bg-[#1a1a2e]/80 border-b border-white/10 shadow-2xl">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black tracking-tighter text-[#d4a574] font-headline">Claude Everywhere</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-sans text-sm tracking-tight text-[#d4a574] border-b-2 border-[#d4a574] pb-1" href="#features">Features</a>
+<a class="font-sans text-sm tracking-tight text-slate-400 hover:text-white transition-colors" href="#how-it-works">How it Works</a>
+<a class="font-sans text-sm tracking-tight text-slate-400 hover:text-white transition-colors" href="#install">Install</a>
+<a class="font-sans text-sm tracking-tight text-slate-400 hover:text-white transition-colors" href="#">Docs</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-[#d4a574] hover:opacity-80 transition-all cursor-pointer">terminal</span>
+<button class="bg-[#d4a574] text-[#1a1a2e] px-4 py-2 rounded font-bold text-sm hover:opacity-80 transition-all active:scale-95 duration-150">Get Started</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 px-6 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-[#1a1a2e] via-[#1a1a2e] to-[#121225] -z-10"></div>
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-20 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#d4a574] blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-[#7c3aed] blur-[120px] rounded-full"></div>
+</div>
+<div class="max-w-5xl mx-auto text-center">
+<h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter mb-6 bg-gradient-to-br from-white to-slate-400 bg-clip-text text-transparent">
+                Claude. Everywhere.
+            </h1>
+<p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Connect Claude to anything — Gmail, Discord, Replit, and every website. Browser extension + MCP servers. Open source.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<button class="w-full sm:w-auto bg-[#d4a574] text-[#1a1a2e] px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">extension</span>
+                    Install Extension
+                </button>
+<button class="w-full sm:w-auto border-2 border-white/20 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">dns</span>
+                    Get MCP Servers
+                </button>
+</div>
+</div>
+<div class="mt-20 max-w-6xl mx-auto rounded-xl border border-white/10 overflow-hidden shadow-2xl shadow-black/50">
+<img alt="Dashboard Preview" class="w-full object-cover" data-alt="high-tech minimalist software dashboard interface showing AI integration with dark navy and amber accents with cinematic lighting and soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGSumdimNVXhFE_mNI6ztD722AA2EVr0zwUNOss_3MtnAcvGbyvsAyeZTrnfhtiCJ8AiJuFJBk8esEtxFp_ACTxuz0QvcGvv7rQWzoCfoTlJTF1vykhIB_ADIhQ8OoSfrhRnOYhPQ6gUJYaU2WDckKEssattP6o_n2vW7AZQahec8SUfUBypc8TWPV7mZaGq82upZOdnzpeeFiYETsSzouJvjOxjzWVUEHgWYAOkxhfhp7IXKrKy58FK4YuO24OFzbs0XMPOurCtSD"/>
+</div>
+</section>
+<!-- Features Grid (Bento Style) -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="features">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div>
+<h2 class="text-4xl font-headline font-bold mb-2">Works With Everything</h2>
+<p class="text-slate-400">Seamless integration across your entire professional workflow.</p>
+</div>
+<div class="text-primary font-bold tracking-widest text-xs uppercase">Integrations</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Gmail -->
+<div class="glass-card p-8 rounded-2xl group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Gmail</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Draft replies, summarize long threads, and manage your inbox directly via Claude.</p>
+</div>
+<!-- Discord -->
+<div class="glass-card p-8 rounded-2xl group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">forum</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Discord</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Bring Claude into your servers. Automate moderation or just have a chat with the team.</p>
+</div>
+<!-- Replit -->
+<div class="glass-card p-8 rounded-2xl group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">code_blocks</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Replit</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Live coding assistance and real-time debugging inside your browser IDE.</p>
+</div>
+<!-- GitHub -->
+<div class="glass-card p-8 rounded-2xl group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+</div>
+<h3 class="text-xl font-bold mb-3">GitHub</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Review pull requests, explain complex commits, and navigate repositories with ease.</p>
+</div>
+<!-- Any Website -->
+<div class="glass-card p-8 rounded-2xl group hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">language</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Any Website</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Activate Claude on any page to parse data, summarize content, or answer questions.</p>
+</div>
+<!-- Claude Desktop -->
+<div class="glass-card p-8 rounded-2xl group hover:border-primary/50 transition-all duration-300 border-primary/20 bg-primary/5">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">computer</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Claude Desktop</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Native OS-level integration for the ultimate power-user experience.</p>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-24 bg-navy-deep relative border-y border-white/5" id="how-it-works">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl font-headline font-bold text-center mb-16">Three Steps to Claude Everywhere</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center">
+<div class="text-8xl font-black text-white/5 mb-[-2rem]">01</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Install</h3>
+<p class="text-slate-400">Download the browser extension or clone the MCP server repository from GitHub.</p>
+</div>
+<div class="text-center">
+<div class="text-8xl font-black text-white/5 mb-[-2rem]">02</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Connect</h3>
+<p class="text-slate-400">Authorize your favorite apps using our secure OAuth flow or local API keys.</p>
+</div>
+<div class="text-center">
+<div class="text-8xl font-black text-white/5 mb-[-2rem]">03</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Use</h3>
+<p class="text-slate-400">Summon Claude with a simple shortcut on any site or within your desktop environment.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Installation Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="install">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Extension Card -->
+<div class="bg-gradient-to-br from-navy-base to-navy-deep p-10 rounded-3xl border border-white/10">
+<h3 class="text-3xl font-bold mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">extension</span>
+                    Browser Extension
+                </h3>
+<ul class="space-y-6 text-slate-300">
+<li class="flex gap-4">
+<span class="flex-none w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center font-bold">1</span>
+<span>Visit the Chrome Web Store or Firefox Add-ons.</span>
+</li>
+<li class="flex gap-4">
+<span class="flex-none w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center font-bold">2</span>
+<span>Click "Add to Browser" to install.</span>
+</li>
+<li class="flex gap-4">
+<span class="flex-none w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center font-bold">3</span>
+<span>Pin the icon and login to your Anthropic account.</span>
+</li>
+</ul>
+<button class="mt-10 w-full bg-white/5 hover:bg-white/10 border border-white/10 py-4 rounded-xl font-bold transition-all">Go to Web Store</button>
+</div>
+<!-- MCP Card -->
+<div class="bg-gradient-to-br from-navy-base to-navy-deep p-10 rounded-3xl border border-white/10">
+<h3 class="text-3xl font-bold mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">dns</span>
+                    MCP Servers
+                </h3>
+<ul class="space-y-6 text-slate-300">
+<li class="flex gap-4">
+<span class="flex-none w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center font-bold">1</span>
+<span>Clone the <code class="bg-black/40 px-2 py-0.5 rounded text-primary">mcp-servers</code> repository.</span>
+</li>
+<li class="flex gap-4">
+<span class="flex-none w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center font-bold">2</span>
+<span>Run <code class="bg-black/40 px-2 py-0.5 rounded text-primary">npm install</code> to setup dependencies.</span>
+</li>
+<li class="flex gap-4">
+<span class="flex-none w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center font-bold">3</span>
+<span>Configure your <code class="bg-black/40 px-2 py-0.5 rounded text-primary">.env</code> with API credentials.</span>
+</li>
+</ul>
+<button class="mt-10 w-full bg-primary text-navy-deep py-4 rounded-xl font-bold transition-all">View GitHub Repo</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#1a1a2e] dark:bg-[#0f0f1a] w-full py-12 border-t border-[#d4a574]/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto space-y-4 md:space-y-0">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="text-lg font-bold text-white font-headline">Claude Everywhere</div>
+<div class="font-sans text-xs uppercase tracking-widest text-slate-500">© 2024 Claude Everywhere. Released under MIT License.</div>
+</div>
+<div class="flex items-center space-x-8">
+<a class="font-sans text-xs uppercase tracking-widest text-slate-500 hover:text-[#d4a574] transition-colors" href="#">GitHub</a>
+<a class="font-sans text-xs uppercase tracking-widest text-slate-500 hover:text-[#d4a574] transition-colors" href="#">Discord</a>
+<a class="font-sans text-xs uppercase tracking-widest text-slate-500 hover:text-[#d4a574] transition-colors" href="#">Changelog</a>
+<a class="font-sans text-xs uppercase tracking-widest text-slate-500 hover:text-[#d4a574] transition-colors" href="#">Privacy</a>
+</div>
+<div class="text-[10px] text-slate-600 font-sans uppercase tracking-tighter">
+                Not affiliated with Anthropic
+            </div>
+</div>
+</footer>
+</body></html>

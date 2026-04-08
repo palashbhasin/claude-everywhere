@@ -1,0 +1,14 @@
+{
+  "name": "@claude-everywhere/mcp-discord",
+  "version": "0.1.0",
+  "description": "MCP server for Discord — read and send messages via Claude",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.0.0"
+  },
+  "license": "MIT"
+}

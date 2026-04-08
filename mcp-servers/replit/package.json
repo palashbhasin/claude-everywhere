@@ -1,0 +1,11 @@
+{
+  "name": "@claude-everywhere/mcp-replit",
+  "version": "0.1.0",
+  "description": "MCP server for Replit — interact with Replit projects via Claude",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}

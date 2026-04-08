@@ -1,0 +1,8 @@
+{
+  "name": "@claude-everywhere/shared",
+  "version": "0.1.0",
+  "description": "Shared utilities for Claude Everywhere MCP servers",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT"
+}

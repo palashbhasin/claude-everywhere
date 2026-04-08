@@ -1,0 +1,14 @@
+{
+  "name": "@claude-everywhere/mcp-gmail",
+  "version": "0.1.0",
+  "description": "MCP server for Gmail — read and send emails via Claude",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "googleapis": "^131.0.0"
+  },
+  "license": "MIT"
+}
