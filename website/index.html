@@ -92,8 +92,154 @@
                 </button>
 </div>
 </div>
-<div class="mt-20 max-w-6xl mx-auto rounded-xl border border-white/10 overflow-hidden shadow-2xl shadow-black/50">
-<img alt="Dashboard Preview" class="w-full object-cover" data-alt="high-tech minimalist software dashboard interface showing AI integration with dark navy and amber accents with cinematic lighting and soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGSumdimNVXhFE_mNI6ztD722AA2EVr0zwUNOss_3MtnAcvGbyvsAyeZTrnfhtiCJ8AiJuFJBk8esEtxFp_ACTxuz0QvcGvv7rQWzoCfoTlJTF1vykhIB_ADIhQ8OoSfrhRnOYhPQ6gUJYaU2WDckKEssattP6o_n2vW7AZQahec8SUfUBypc8TWPV7mZaGq82upZOdnzpeeFiYETsSzouJvjOxjzWVUEHgWYAOkxhfhp7IXKrKy58FK4YuO24OFzbs0XMPOurCtSD"/>
+<!-- Live Dashboard Mockup (pure HTML/CSS/SVG) -->
+<div class="mt-20 max-w-6xl mx-auto rounded-xl border border-white/10 overflow-hidden shadow-2xl shadow-black/50 bg-[#12121f]">
+  <div class="p-6 pb-0 flex items-center justify-between border-b border-white/5 mb-0">
+    <div class="flex items-center gap-3">
+      <div class="flex gap-1.5">
+        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+        <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+      </div>
+      <span class="text-sm text-slate-500 font-mono">Claude Everywhere — Dashboard</span>
+    </div>
+    <div class="flex items-center gap-4 text-xs text-slate-500 pb-4">
+      <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-green-400 inline-block"></span> All systems online</span>
+      <span>Last sync: 2m ago</span>
+    </div>
+  </div>
+  <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Stat Cards Row -->
+    <div class="bg-white/[0.03] border border-white/5 rounded-xl p-5">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs text-slate-500 uppercase tracking-wider">Messages Today</span>
+        <span class="material-symbols-outlined text-primary text-lg">chat</span>
+      </div>
+      <div class="text-3xl font-bold text-white font-headline">1,284</div>
+      <div class="text-xs text-green-400 mt-1">+12.4% from yesterday</div>
+    </div>
+    <div class="bg-white/[0.03] border border-white/5 rounded-xl p-5">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs text-slate-500 uppercase tracking-wider">Active Integrations</span>
+        <span class="material-symbols-outlined text-primary text-lg">extension</span>
+      </div>
+      <div class="text-3xl font-bold text-white font-headline">6</div>
+      <div class="text-xs text-slate-400 mt-1">Gmail, Discord, Replit, GitHub, Web, Desktop</div>
+    </div>
+    <div class="bg-white/[0.03] border border-white/5 rounded-xl p-5">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs text-slate-500 uppercase tracking-wider">API Tokens Used</span>
+        <span class="material-symbols-outlined text-primary text-lg">token</span>
+      </div>
+      <div class="text-3xl font-bold text-white font-headline">384K</div>
+      <div class="text-xs text-slate-400 mt-1">of 1M monthly quota</div>
+    </div>
+  </div>
+  <div class="px-6 pb-6 grid grid-cols-1 lg:grid-cols-5 gap-6">
+    <!-- Usage Chart (SVG) -->
+    <div class="lg:col-span-3 bg-white/[0.03] border border-white/5 rounded-xl p-5">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-sm font-semibold text-white">Weekly Usage</span>
+        <div class="flex gap-4 text-xs text-slate-500">
+          <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#d4a574] inline-block"></span> Messages</span>
+          <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#7c5cbf] inline-block"></span> Tokens (K)</span>
+        </div>
+      </div>
+      <svg viewBox="0 0 600 200" class="w-full" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid lines -->
+        <line x1="40" y1="20" x2="40" y2="170" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+        <line x1="40" y1="170" x2="580" y2="170" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+        <line x1="40" y1="120" x2="580" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4"/>
+        <line x1="40" y1="70" x2="580" y2="70" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4"/>
+        <line x1="40" y1="20" x2="580" y2="20" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4"/>
+        <!-- Y-axis labels -->
+        <text x="30" y="174" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="end">0</text>
+        <text x="30" y="124" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="end">400</text>
+        <text x="30" y="74" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="end">800</text>
+        <text x="30" y="24" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="end">1.2K</text>
+        <!-- X-axis labels -->
+        <text x="117" y="190" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">Mon</text>
+        <text x="194" y="190" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">Tue</text>
+        <text x="271" y="190" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">Wed</text>
+        <text x="348" y="190" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">Thu</text>
+        <text x="425" y="190" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">Fri</text>
+        <text x="502" y="190" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">Sat</text>
+        <text x="580" y="190" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">Sun</text>
+        <!-- Messages area (amber) -->
+        <defs>
+          <linearGradient id="amberGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d4a574" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#d4a574" stop-opacity="0.02"/>
+          </linearGradient>
+          <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#7c5cbf" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#7c5cbf" stop-opacity="0.02"/>
+          </linearGradient>
+        </defs>
+        <path d="M117,110 L194,85 L271,95 L348,60 L425,45 L502,70 L580,35 L580,170 L117,170 Z" fill="url(#amberGrad)"/>
+        <polyline points="117,110 194,85 271,95 348,60 425,45 502,70 580,35" fill="none" stroke="#d4a574" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Dots on messages line -->
+        <circle cx="117" cy="110" r="4" fill="#d4a574"/>
+        <circle cx="194" cy="85" r="4" fill="#d4a574"/>
+        <circle cx="271" cy="95" r="4" fill="#d4a574"/>
+        <circle cx="348" cy="60" r="4" fill="#d4a574"/>
+        <circle cx="425" cy="45" r="4" fill="#d4a574"/>
+        <circle cx="502" cy="70" r="4" fill="#d4a574"/>
+        <circle cx="580" cy="35" r="4" fill="#d4a574"/>
+        <!-- Tokens area (purple) -->
+        <path d="M117,140 L194,125 L271,130 L348,105 L425,95 L502,110 L580,80 L580,170 L117,170 Z" fill="url(#purpleGrad)"/>
+        <polyline points="117,140 194,125 271,130 348,105 425,95 502,110 580,80" fill="none" stroke="#7c5cbf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,3"/>
+      </svg>
+    </div>
+    <!-- Integration Status -->
+    <div class="lg:col-span-2 bg-white/[0.03] border border-white/5 rounded-xl p-5">
+      <span class="text-sm font-semibold text-white block mb-4">Integration Status</span>
+      <div class="space-y-3">
+        <div class="flex items-center justify-between py-2 border-b border-white/5">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">mail</span>
+            <span class="text-sm text-slate-300">Gmail</span>
+          </div>
+          <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Connected</span>
+        </div>
+        <div class="flex items-center justify-between py-2 border-b border-white/5">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">forum</span>
+            <span class="text-sm text-slate-300">Discord</span>
+          </div>
+          <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Connected</span>
+        </div>
+        <div class="flex items-center justify-between py-2 border-b border-white/5">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">code_blocks</span>
+            <span class="text-sm text-slate-300">Replit</span>
+          </div>
+          <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Connected</span>
+        </div>
+        <div class="flex items-center justify-between py-2 border-b border-white/5">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">terminal</span>
+            <span class="text-sm text-slate-300">GitHub</span>
+          </div>
+          <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Connected</span>
+        </div>
+        <div class="flex items-center justify-between py-2 border-b border-white/5">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">language</span>
+            <span class="text-sm text-slate-300">Web Overlay</span>
+          </div>
+          <span class="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Active</span>
+        </div>
+        <div class="flex items-center justify-between py-2">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">computer</span>
+            <span class="text-sm text-slate-300">Claude Desktop</span>
+          </div>
+          <span class="text-xs bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded-full">MCP Ready</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 <!-- Features Grid (Bento Style) -->
